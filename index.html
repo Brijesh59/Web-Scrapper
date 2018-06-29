@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/png" href="./img/flight.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Bad+Script|Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
+  <script src="https://jspm.io/system.js"></script>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <title>Web Crawler for Flight</title>
+</head>
+<body>
+  <div class="container animated" id="formData">
+    <h2>WEB CRAWLER</h2>
+    <span class="subdetails">Store Flight details on GO</span>
+    <i class="fas fa-plane"></i>
+    <button class="btn red lighten-1 responsiveBtn">CheckOut</button>
+  </div>
+  <div id="rightBar">
+    <div id = "navbar">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo"><i class="fab fa-avianex"></i></a>
+          <ul  class="right">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="csv">Download CSV</a></li>
+            <li><a class="about">About</a></li>
+          </ul>
+        </div>
+      </nav>
+     </div>
+
+  <div class="rightBody">
+    <form autocomplete="off" id="formValidate">
+      <div class="input-field col s12">
+        <input type="text" id="source"  class="autocomplete" >
+        <label for="source">Source</label>
+        <span class="commonSpanClass" id="sourceSpan">Please Enter a Value</span>
+      </div>
+
+      <div class="input-field col s12">
+        <input type="text" id="destination"  class="autocomplete" >
+        <label for="destination">Destination</label>
+        <span class="commonSpanClass" id="destinationSpan">Please Enter a Value</span>
+      </div>
+
+      <div class="input-field col s12">
+        <input type="date" id="date" name="date" >
+        <label for="date">Date</label>
+        <span class="commonSpanClass" id="dateSpan">Please Enter a Value</span>
+      </div>
+
+      <div class="input-field col s12">
+        <input type="number" id="adults" name="adults">
+        <label for="adults">Adult: 12+ YRS</label>
+        <span class="commonSpanClass" id="adultsSpan">Please Enter a Value</span>
+      </div>
+
+      <div class="input-field col s12">
+        <input type="number" id="child" name="child" value="0">
+        <label for="child">Child: 2-12 YRS</label>
+        <span id="childSpan"></span>
+      </div>
+
+      <div class="input-field col s12">
+        <input type="number" id="infant" value="0">
+        <label for="infant">Infant: 0-2 YRS</label>
+        <span id="infantSpan"></span>
+      </div>
+
+      <div class="input-field col s12">
+        <select id="classOfTarvelling" >
+          <option value="E">Economy</option>
+          <option value="B">Business</option>
+        </select>
+      </div>
+      <span id="submitSpan">Maximum of 9 travellers allowed</span></br>
+      <button class="btn waves-effect waves-light" id="submitBtn" type="submit" name="action" >Submit</button>
+    </form>
+
+    <div class="spinner">
+      <div class="loader">
+      	<div></div>
+      	<div></div>
+      	<div></div>
+      	<div></div>
+      	<div></div>
+      	<div></div>
+      	<div></div>
+      	<div></div>
+      	<div></div>
+      </div>
+    </div>
+    <div id = "lists"></div>
+  </div>
+  </div>
+  <script src="./js/autocomplete.js"></script>
+  <script>
+    System.import('./js/script.js');
+    System.import('./js/csvGenerator.js');
+    System.import('./js/enableFastFeedback.js');
+  </script>
+  <script src="./js/responsiveScript.js"></script>
+</body>
+</html>
