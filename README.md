@@ -6,6 +6,7 @@ This is made as a project given by takeup.in
 
 ### 1. AutoComplete Feature
 Source and Destination name has autocompletion feature.
+<img src="https://i.imgur.com/GN955Qe.gif">
 
 ### 2. Validation
 
