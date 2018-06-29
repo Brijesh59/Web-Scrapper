@@ -4,13 +4,13 @@ This is made as a project given by takeup.in
 
 ## Features
 
-### 1 AutoComplete Feature
+### 1. AutoComplete Feature
 Source and Destination name has autocompletion feature.
 
-### 2 Validation
+### 2. Validation
 
-### 3 Fetches and Shows data
+### 3. Fetches and Shows data
 
-### 4 Data Can be Downloaded as CSV file once fetched
+### 4. Data Can be Downloaded as CSV file once fetched
 
 Live Demo: https://brijesh59.github.io/Web-Scrapper/
