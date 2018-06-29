@@ -9,9 +9,13 @@ Source and Destination name has autocompletion feature.
 <img src="https://i.imgur.com/GN955Qe.gif">
 
 ### 2. Validation
+<img src="https://i.imgur.com/9AG96Uc.gif">
+<img src="https://i.imgur.com/ivODqr6.gif">
 
 ### 3. Fetches and Shows data
+<img src="https://i.imgur.com/7l27aeh.gif">
 
 ### 4. Data Can be Downloaded as CSV file once fetched
+<img src="https://i.imgur.com/lcRf01A.gif">
 
 Live Demo: https://brijesh59.github.io/Web-Scrapper/
